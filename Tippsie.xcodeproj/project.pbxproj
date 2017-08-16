@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF48C20C1F43956800299E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C20B1F43956800299E0D /* AppDelegate.swift */; };
+		EF48C20E1F43956800299E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C20D1F43956800299E0D /* ViewController.swift */; };
+		EF48C2111F43956800299E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF48C20F1F43956800299E0D /* Main.storyboard */; };
+		EF48C2131F43956800299E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF48C2121F43956800299E0D /* Assets.xcassets */; };
+		EF48C2161F43956800299E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF48C2141F43956800299E0D /* LaunchScreen.storyboard */; };
+		EF48C2211F43956800299E0D /* TippsieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C2201F43956800299E0D /* TippsieTests.swift */; };
+		EF48C22C1F43956800299E0D /* TippsieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C22B1F43956800299E0D /* TippsieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF48C21D1F43956800299E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF48C2001F43956700299E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF48C2071F43956700299E0D;
+			remoteInfo = Tippsie;
+		};
+		EF48C2281F43956800299E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF48C2001F43956700299E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF48C2071F43956700299E0D;
+			remoteInfo = Tippsie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF48C2081F43956800299E0D /* Tippsie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippsie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48C20B1F43956800299E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF48C20D1F43956800299E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF48C2101F43956800299E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF48C2121F43956800299E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF48C2151F43956800299E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF48C2171F43956800299E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF48C21C1F43956800299E0D /* TippsieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippsieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48C2201F43956800299E0D /* TippsieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippsieTests.swift; sourceTree = "<group>"; };
+		EF48C2221F43956800299E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF48C2271F43956800299E0D /* TippsieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippsieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48C22B1F43956800299E0D /* TippsieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippsieUITests.swift; sourceTree = "<group>"; };
+		EF48C22D1F43956800299E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF48C2051F43956700299E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C2191F43956800299E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C2241F43956800299E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF48C1FF1F43956700299E0D = {
+			isa = PBXGroup;
+			children = (
+				EF48C20A1F43956800299E0D /* Tippsie */,
+				EF48C21F1F43956800299E0D /* TippsieTests */,
+				EF48C22A1F43956800299E0D /* TippsieUITests */,
+				EF48C2091F43956800299E0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF48C2091F43956800299E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF48C2081F43956800299E0D /* Tippsie.app */,
+				EF48C21C1F43956800299E0D /* TippsieTests.xctest */,
+				EF48C2271F43956800299E0D /* TippsieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF48C20A1F43956800299E0D /* Tippsie */ = {
+			isa = PBXGroup;
+			children = (
+				EF48C20B1F43956800299E0D /* AppDelegate.swift */,
+				EF48C20D1F43956800299E0D /* ViewController.swift */,
+				EF48C20F1F43956800299E0D /* Main.storyboard */,
+				EF48C2121F43956800299E0D /* Assets.xcassets */,
+				EF48C2141F43956800299E0D /* LaunchScreen.storyboard */,
+				EF48C2171F43956800299E0D /* Info.plist */,
+			);
+			path = Tippsie;
+			sourceTree = "<group>";
+		};
+		EF48C21F1F43956800299E0D /* TippsieTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF48C2201F43956800299E0D /* TippsieTests.swift */,
+				EF48C2221F43956800299E0D /* Info.plist */,
+			);
+			path = TippsieTests;
+			sourceTree = "<group>";
+		};
+		EF48C22A1F43956800299E0D /* TippsieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF48C22B1F43956800299E0D /* TippsieUITests.swift */,
+				EF48C22D1F43956800299E0D /* Info.plist */,
+			);
+			path = TippsieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF48C2071F43956700299E0D /* Tippsie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48C2301F43956800299E0D /* Build configuration list for PBXNativeTarget "Tippsie" */;
+			buildPhases = (
+				EF48C2041F43956700299E0D /* Sources */,
+				EF48C2051F43956700299E0D /* Frameworks */,
+				EF48C2061F43956700299E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tippsie;
+			productName = Tippsie;
+			productReference = EF48C2081F43956800299E0D /* Tippsie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF48C21B1F43956800299E0D /* TippsieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48C2331F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieTests" */;
+			buildPhases = (
+				EF48C2181F43956800299E0D /* Sources */,
+				EF48C2191F43956800299E0D /* Frameworks */,
+				EF48C21A1F43956800299E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF48C21E1F43956800299E0D /* PBXTargetDependency */,
+			);
+			name = TippsieTests;
+			productName = TippsieTests;
+			productReference = EF48C21C1F43956800299E0D /* TippsieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF48C2261F43956800299E0D /* TippsieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48C2361F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieUITests" */;
+			buildPhases = (
+				EF48C2231F43956800299E0D /* Sources */,
+				EF48C2241F43956800299E0D /* Frameworks */,
+				EF48C2251F43956800299E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF48C2291F43956800299E0D /* PBXTargetDependency */,
+			);
+			name = TippsieUITests;
+			productName = TippsieUITests;
+			productReference = EF48C2271F43956800299E0D /* TippsieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF48C2001F43956700299E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ravi Mandala";
+				TargetAttributes = {
+					EF48C2071F43956700299E0D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					EF48C21B1F43956800299E0D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF48C2071F43956700299E0D;
+					};
+					EF48C2261F43956800299E0D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF48C2071F43956700299E0D;
+					};
+				};
+			};
+			buildConfigurationList = EF48C2031F43956700299E0D /* Build configuration list for PBXProject "Tippsie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF48C1FF1F43956700299E0D;
+			productRefGroup = EF48C2091F43956800299E0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF48C2071F43956700299E0D /* Tippsie */,
+				EF48C21B1F43956800299E0D /* TippsieTests */,
+				EF48C2261F43956800299E0D /* TippsieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF48C2061F43956700299E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48C2161F43956800299E0D /* LaunchScreen.storyboard in Resources */,
+				EF48C2131F43956800299E0D /* Assets.xcassets in Resources */,
+				EF48C2111F43956800299E0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C21A1F43956800299E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C2251F43956800299E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF48C2041F43956700299E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48C20E1F43956800299E0D /* ViewController.swift in Sources */,
+				EF48C20C1F43956800299E0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C2181F43956800299E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48C2211F43956800299E0D /* TippsieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48C2231F43956800299E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48C22C1F43956800299E0D /* TippsieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF48C21E1F43956800299E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF48C2071F43956700299E0D /* Tippsie */;
+			targetProxy = EF48C21D1F43956800299E0D /* PBXContainerItemProxy */;
+		};
+		EF48C2291F43956800299E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF48C2071F43956700299E0D /* Tippsie */;
+			targetProxy = EF48C2281F43956800299E0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF48C20F1F43956800299E0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48C2101F43956800299E0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF48C2141F43956800299E0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48C2151F43956800299E0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF48C22E1F43956800299E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF48C22F1F43956800299E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF48C2311F43956800299E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tippsie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.tippsie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF48C2321F43956800299E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tippsie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.tippsie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EF48C2341F43956800299E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TippsieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.TippsieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tippsie.app/Tippsie";
+			};
+			name = Debug;
+		};
+		EF48C2351F43956800299E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TippsieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.TippsieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tippsie.app/Tippsie";
+			};
+			name = Release;
+		};
+		EF48C2371F43956800299E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TippsieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.TippsieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tippsie;
+			};
+			name = Debug;
+		};
+		EF48C2381F43956800299E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TippsieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innawaylabs.TippsieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tippsie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF48C2031F43956700299E0D /* Build configuration list for PBXProject "Tippsie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48C22E1F43956800299E0D /* Debug */,
+				EF48C22F1F43956800299E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF48C2301F43956800299E0D /* Build configuration list for PBXNativeTarget "Tippsie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48C2311F43956800299E0D /* Debug */,
+				EF48C2321F43956800299E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF48C2331F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48C2341F43956800299E0D /* Debug */,
+				EF48C2351F43956800299E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF48C2361F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48C2371F43956800299E0D /* Debug */,
+				EF48C2381F43956800299E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF48C2001F43956700299E0D /* Project object */;
+}
