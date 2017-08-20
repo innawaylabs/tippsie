@@ -28,6 +28,14 @@ class ViewController: UIViewController {
         print ("Hello")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        let tipSegment = defaults.integer(forKey: "default_tip_segment")
+
+        tipPercentagesSegControl.selectedSegmentIndex = tipSegment
+        amountUpdated(billField);
+    }
+    
     @IBAction func amountUpdated(_ sender: AnyObject) {
         let tipPercentages = [0.18, 0.2, 0.25]
         let billAmount = Double(billField.text!) ?? 0

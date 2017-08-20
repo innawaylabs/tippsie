@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1FEE301F4982FB00F86E93 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FEE2F1F4982FB00F86E93 /* SettingsViewController.swift */; };
 		EF48C20C1F43956800299E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C20B1F43956800299E0D /* AppDelegate.swift */; };
 		EF48C20E1F43956800299E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C20D1F43956800299E0D /* ViewController.swift */; };
 		EF48C2111F43956800299E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF48C20F1F43956800299E0D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF1FEE2F1F4982FB00F86E93 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EF48C2081F43956800299E0D /* Tippsie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippsie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF48C20B1F43956800299E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF48C20D1F43956800299E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				EF48C20B1F43956800299E0D /* AppDelegate.swift */,
 				EF48C20D1F43956800299E0D /* ViewController.swift */,
 				EF48C20F1F43956800299E0D /* Main.storyboard */,
+				EF1FEE2F1F4982FB00F86E93 /* SettingsViewController.swift */,
 				EF48C2121F43956800299E0D /* Assets.xcassets */,
 				EF48C2141F43956800299E0D /* LaunchScreen.storyboard */,
 				EF48C2171F43956800299E0D /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				EF48C20E1F43956800299E0D /* ViewController.swift in Sources */,
 				EF48C20C1F43956800299E0D /* AppDelegate.swift in Sources */,
+				EF1FEE301F4982FB00F86E93 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				EF48C2321F43956800299E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF48C2331F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				EF48C2351F43956800299E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF48C2361F43956800299E0D /* Build configuration list for PBXNativeTarget "TippsieUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				EF48C2381F43956800299E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

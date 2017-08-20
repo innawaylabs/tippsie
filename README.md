@@ -6,16 +6,25 @@ Time spent: 2 hours
 
 Completed:
 
-* [x] Required: User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] Required: Settings page to change the default tip percentage.
-* [ ] Optional: UI animations
-* [ ] Optional: Remembering the bill amount across app restarts (if <10mins)
-* [ ] Optional: Using locale-specific currency and currency thousands separators.
-* [ ] Additional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
-* [ ] Additional: Theming the Settings page like the main application page.
-* [ ] Additional: Also remembering the tip percentage across app restarts.
-* [ ] Additional: Support orientation change and make it compatible on other screens.
+## Required features
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] Settings page to change the default tip percentage.
 
-![Video Walkthrough](anim_tip_calculator.gif)
+## Optional features
+* [x] Remember the default tip percentage across app restarts
+* [x] Auto-apply the default tip percentage when changed
+* [ ] Remembering the bill amount across app restarts
+* [ ] UI animations
+* [ ] Ignore the remembered bill amount after 10 minutes
+* [ ] Using locale-specific currency and currency thousands separators.
+
+## Additional features
+* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder.
+* [ ] Theming the Settings page like the main application page.
+* [ ] Also remembering the tip percentage across app restarts.
+* [ ] Support orientation change and make it compatible on other screens.
+
+
+![Video Walkthrough](tippsie_demo.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
