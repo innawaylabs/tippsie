@@ -25,6 +25,6 @@ Completed:
 * [ ] Support orientation change and make it compatible on other screens.
 
 
-![Video Walkthrough](tippsie_demo.gif)
+![Video Walkthrough of basic user stories:] (tippsie-demo.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF courtesy: [LiceCap](http://www.cockos.com/licecap/).
