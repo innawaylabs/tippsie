@@ -10,7 +10,10 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     let defaultTipPercentageKey = "default_tip_segment"
+    let currencySymbolKey = "currency_symbol_index"
+    
     @IBOutlet weak var defaultTipPercentage: UISegmentedControl!
+    @IBOutlet weak var currencySymbolSegControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,15 +33,17 @@ class SettingsViewController: UIViewController {
             let segIndex = defaults.integer(forKey: defaultTipPercentageKey)
             defaultTipPercentage.selectedSegmentIndex = segIndex
         }
+        if (defaults.object(forKey: currencySymbolKey) != nil) {
+            let currencySymbolIndex = defaults.integer(forKey: currencySymbolKey)
+            currencySymbolSegControl.selectedSegmentIndex = currencySymbolIndex
+        }
     }
     
     @IBAction func persistDefaultTipPercentage(_ sender: Any) {
         let defaults = UserDefaults.standard
         
-        
-        let defaultTipSegment = defaultTipPercentage.selectedSegmentIndex
-        defaults.set(defaultTipSegment, forKey: defaultTipPercentageKey)
-        
+        defaults.set(defaultTipPercentage.selectedSegmentIndex, forKey: defaultTipPercentageKey)
+        defaults.set(currencySymbolSegControl.selectedSegmentIndex, forKey: currencySymbolKey)
         defaults.synchronize()
     }
 }
