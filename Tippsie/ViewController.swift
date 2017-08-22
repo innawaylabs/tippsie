@@ -12,9 +12,11 @@ class ViewController: UIViewController {
     let defaultTipPercentageKey = "default_tip_segment"
     let billAmountKey = "bill_amount"
     let currencySymbolIndexKey = "currency_symbol_index"
+    let roundingPolicyKey = "rounding_policy_index"
     let tipPercentages = [0.18, 0.2, 0.25]
     let currencySymbols = ["$", "£", "₹"]
-
+    var roundingPolicyIndex = 0
+    
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
@@ -50,6 +52,9 @@ class ViewController: UIViewController {
             let tipSegment = defaults.integer(forKey: defaultTipPercentageKey)
             tipPercentagesSegControl.selectedSegmentIndex = tipSegment
         }
+        if (defaults.object(forKey: roundingPolicyKey) != nil) {
+            roundingPolicyIndex = defaults.integer(forKey: roundingPolicyKey)
+        }
         
         amountUpdated(billField);
     }
@@ -60,7 +65,14 @@ class ViewController: UIViewController {
         let total = billAmount + tip
         
         tipLabel.text = String(format: "%.2f", tip)
-        totalLabel.text = String(format: "%.2f", total)
+        if (roundingPolicyIndex == 1) {
+            totalLabel.text = String(format: "(%.0f)", ceil(total))
+        } else if (roundingPolicyIndex == 2) {
+            totalLabel.text = String(format: "(%.0f)", floor(total))
+        } else {
+            totalLabel.text = String(format: "%.2f", total)
+        }
+        
 
         // Persist the details
         let defaults = UserDefaults.standard
