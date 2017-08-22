@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let billAmountKey = "bill_amount"
     let currencySymbolIndexKey = "currency_symbol_index"
     let roundingPolicyKey = "rounding_policy_index"
+    let savedDateKey = "saved_date"
     let tipPercentages = [0.18, 0.2, 0.25]
     let currencySymbols = ["$", "£", "₹"]
     var roundingPolicyIndex = 0
@@ -27,6 +28,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -37,10 +40,17 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
+        var ageInSeconds = 0.0
         
         if (defaults.object(forKey: billAmountKey) != nil) {
-            let billAmount = defaults.double(forKey: billAmountKey)
-            billField.text = String(format: "%.2f", billAmount)
+            if (defaults.object(forKey: savedDateKey) != nil) {
+                let savedDate = defaults.object(forKey: savedDateKey) as! Date
+                ageInSeconds = savedDate.timeIntervalSinceNow
+            }
+            if (ageInSeconds >= -600) {
+                let billAmount = defaults.double(forKey: billAmountKey)
+                billField.text = String(format: "%.2f", billAmount)
+            }
         }
         if (defaults.object(forKey: currencySymbolIndexKey) != nil) {
             let currencySymbolIndex = defaults.integer(forKey: currencySymbolIndexKey)
@@ -78,6 +88,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         
         defaults.set(billAmount, forKey: billAmountKey)
+        defaults.set(Date(), forKey: savedDateKey)
         defaults.synchronize()
     }
 }

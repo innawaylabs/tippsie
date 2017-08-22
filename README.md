@@ -14,16 +14,17 @@ Time spent: 4 hours in total
 
 ### Optional features
 * [x] Auto-apply the default tip percentage when changed
-* [x] Remembering the bill amount across app restarts
-* [ ] Ignore the remembered bill amount after 10 minutes
+* [x] Remembering the bill amount across app restarts (< 5 minutes)
 * [x] Using locale-specific currency
 * [ ] Switch thousands separators based on selected currency
 * [ ] UI animations
 
 ### Additional features
 * [x] Remembering the tip percentage across app restarts.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder.
-* [ ] Theming the Settings page like the main application page.
+* [x] Added an option to round up/down the total amount. 
+* [x] Added a decimal keypad 
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder.
+* [x] Theming the Settings page like the main application page (applied colors).
 * [ ] Support orientation change and make it compatible on other screens.
 
 ## Project Analysis
