@@ -30,14 +30,14 @@ Time spent: 4 hours in total
 
 As part of your pre-work submission, please reflect on the app and answer the following questions below:
 
-* Question: What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer?
-** Answer: Impressed by how little code is needed for Hello World application. Swift is significantly better than Objective C.
+* **Question:** What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer?
+* **Answer:** Impressed by how little code is needed for Hello World application. Swift is significantly better than Objective C.
 
-* Question: Any idea how they are being implemented under the hood?
-** Answer: XCode must be generating an xml under the hood just like Android IDEs do.
+* **Question:** Any idea how they are being implemented under the hood?
+* **Answer:** XCode must be generating an xml under the hood just like Android IDEs do.
 
-* Question: Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures?
-** Answer: If class A has a strong reference to an object of type Class B and Class B has a reference to an object of type Class A, then a string reference cycle would be created. 
+* **Question:** Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures?
+* **Answer:** If class A has a strong reference to an object of type Class B and Class B has a reference to an object of type Class A, then a string reference cycle would be created. 
 
 ## Video Walkthrough
 
