@@ -10,11 +10,9 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     let defaultTipPercentageKey = "default_tip_segment"
-    let currencySymbolKey = "currency_symbol_index"
     let roundingPolicyKey = "rounding_policy_index"
     
     @IBOutlet weak var defaultTipPercentage: UISegmentedControl!
-    @IBOutlet weak var currencySymbolSegControl: UISegmentedControl!
     @IBOutlet weak var roundingSegControl: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -35,10 +33,6 @@ class SettingsViewController: UIViewController {
             let segIndex = defaults.integer(forKey: defaultTipPercentageKey)
             defaultTipPercentage.selectedSegmentIndex = segIndex
         }
-        if (defaults.object(forKey: currencySymbolKey) != nil) {
-            let currencySymbolIndex = defaults.integer(forKey: currencySymbolKey)
-            currencySymbolSegControl.selectedSegmentIndex = currencySymbolIndex
-        }
         if (defaults.object(forKey: roundingPolicyKey) != nil) {
             let roundingPolicyIndex = defaults.integer(forKey: roundingPolicyKey)
             roundingSegControl.selectedSegmentIndex = roundingPolicyIndex
@@ -49,7 +43,6 @@ class SettingsViewController: UIViewController {
         let defaults = UserDefaults.standard
         
         defaults.set(defaultTipPercentage.selectedSegmentIndex, forKey: defaultTipPercentageKey)
-        defaults.set(currencySymbolSegControl.selectedSegmentIndex, forKey: currencySymbolKey)
         defaults.set(roundingSegControl.selectedSegmentIndex, forKey: roundingPolicyKey)
         defaults.synchronize()
     }

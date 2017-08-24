@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     let roundingPolicyKey = "rounding_policy_index"
     let savedDateKey = "saved_date"
     let tipPercentages = [0.18, 0.2, 0.25]
-    let currencySymbols = ["$", "£", "₹"]
     var roundingPolicyIndex = 0
+    let currencySymbols = ["US": "$", "GB": "£", "IN": "₹", "JP": "¥", "GR": "€"]
     
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -52,12 +52,19 @@ class ViewController: UIViewController {
                 billField.text = String(format: "%.2f", billAmount)
             }
         }
-        if (defaults.object(forKey: currencySymbolIndexKey) != nil) {
-            let currencySymbolIndex = defaults.integer(forKey: currencySymbolIndexKey)
-            currencyLabel1.text = currencySymbols[currencySymbolIndex]
-            currencyLabel2.text = currencySymbols[currencySymbolIndex]
-            currencyLabel3.text = currencySymbols[currencySymbolIndex]
+        
+        
+        let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String
+        if let currencySymbol = currencySymbols[countryCode!] {
+            currencyLabel1.text = currencySymbol
+            currencyLabel2.text = currencySymbol
+            currencyLabel3.text = currencySymbol
+        } else {
+            currencyLabel1.text = "$"
+            currencyLabel2.text = "$"
+            currencyLabel3.text = "$"
         }
+        
         if (defaults.object(forKey: defaultTipPercentageKey) != nil) {
             let tipSegment = defaults.integer(forKey: defaultTipPercentageKey)
             tipPercentagesSegControl.selectedSegmentIndex = tipSegment
@@ -83,7 +90,6 @@ class ViewController: UIViewController {
             totalLabel.text = String(format: "%.2f", total)
         }
         
-
         // Persist the details
         let defaults = UserDefaults.standard
         
@@ -92,4 +98,3 @@ class ViewController: UIViewController {
         defaults.synchronize()
     }
 }
-
