@@ -4,7 +4,7 @@ This is a Tip Calculator application for iOS submitted as the pre-assignment req
 
 Submitted by: Ravi Kumar Mandala
 
-Time spent: 4 hours in total
+Time spent: 8 hours in total
 
 ## User Stories
 
@@ -32,13 +32,13 @@ Time spent: 4 hours in total
 As part of your pre-work submission, please reflect on the app and answer the following questions below:
 
 * **Question:** What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer?
-* **Answer:** Impressed by how little code is needed for Hello World application. Swift is significantly better than Objective C.
+* **Answer:** Impressed by how little code is needed for Hello World application. Swift is significantly better than Objective C. Outlets are handles for the UI elements, for programmatic control. Actions are code snippets to be executed when certain UI event happens.
 
 * **Question:** Any idea how they are being implemented under the hood?
-* **Answer:** XCode must be generating an xml under the hood just like Android IDEs do.
+* **Answer:** XCode is generating xml under the hood just like Android IDEs do, which is named as a .lproj file.
 
 * **Question:** Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures?
-* **Answer:** If class A has a strong reference to an object of type Class B and Class B has a reference to an object of type Class A, then a string reference cycle would be created. 
+* **Answer:** If class A has a strong reference to an object of type Class B and Class B has a reference to an object of type Class A, then a string reference cycle would be created. This can be prevented by using weak references.
 
 ## Video Walkthrough
 
