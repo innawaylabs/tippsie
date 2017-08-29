@@ -14,23 +14,21 @@ class ViewController: UIViewController {
     let currencySymbolIndexKey = "currency_symbol_index"
     let roundingPolicyKey = "rounding_policy_index"
     let savedDateKey = "saved_date"
-    let tipPercentages = [0.18, 0.2, 0.25]
+    let tipPercentages = [18, 20, 25]
     var roundingPolicyIndex = 0
-    let currencySymbols = ["US": "$", "GB": "£", "IN": "₹", "JP": "¥", "GR": "€"]
-    
+    let currencySymbols = ["US": "$", "GB": "£", "IN": "₹", "JP": "¥", "GR": "€", "EE": "€"]
+
+    @IBOutlet weak var tipPercentageSlider: UISlider!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipPercentagesSegControl: UISegmentedControl!
-    @IBOutlet weak var currencyLabel1: UILabel!
-    @IBOutlet weak var currencyLabel2: UILabel!
-    @IBOutlet weak var currencyLabel3: UILabel!
+    @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var tipPercentageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.billField.becomeFirstResponder()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,6 +39,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         var ageInSeconds = 0.0
+        
+        tipPercentageSlider.minimumValue = 0
+        tipPercentageSlider.maximumValue = 100
         
         if (defaults.object(forKey: billAmountKey) != nil) {
             if (defaults.object(forKey: savedDateKey) != nil) {
@@ -56,38 +57,45 @@ class ViewController: UIViewController {
         
         let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String
         if let currencySymbol = currencySymbols[countryCode!] {
-            currencyLabel1.text = currencySymbol
-            currencyLabel2.text = currencySymbol
-            currencyLabel3.text = currencySymbol
+            currencyLabel.text = currencySymbol
         } else {
-            currencyLabel1.text = "$"
-            currencyLabel2.text = "$"
-            currencyLabel3.text = "$"
+            currencyLabel.text = "$"
         }
         
         if (defaults.object(forKey: defaultTipPercentageKey) != nil) {
-            let tipSegment = defaults.integer(forKey: defaultTipPercentageKey)
-            tipPercentagesSegControl.selectedSegmentIndex = tipSegment
+            let tipPercentage = defaults.integer(forKey: defaultTipPercentageKey)
+            tipPercentageSlider.value = Float(tipPercentages[tipPercentage])
+            tipPercentageChanged(tipPercentageSlider)
         }
         if (defaults.object(forKey: roundingPolicyKey) != nil) {
             roundingPolicyIndex = defaults.integer(forKey: roundingPolicyKey)
         }
         
-        amountUpdated(billField);
+        amountUpdated(billField)
+    }
+    
+    @IBAction func tipPercentageChanged(_ sender: Any) {
+        tipPercentageLabel.text = String(format: "%.0f", tipPercentageSlider.value)
+        amountUpdated(billField)
     }
     
     @IBAction func amountUpdated(_ sender: AnyObject) {
         let billAmount = Double(billField.text!) ?? 0
-        let tip = billAmount * tipPercentages[tipPercentagesSegControl.selectedSegmentIndex]
+        let tipPercentage = tipPercentageSlider.value
+        let tip = billAmount * Double(tipPercentage/100.0)
         let total = billAmount + tip
         
-        tipLabel.text = String(format: "%.2f", tip)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.minimumFractionDigits = 2
+        
+        tipLabel.text = formatter.string(from: tip as NSNumber);
         if (roundingPolicyIndex == 1) {
             totalLabel.text = String(format: "(%.0f)", ceil(total))
         } else if (roundingPolicyIndex == 2) {
             totalLabel.text = String(format: "(%.0f)", floor(total))
         } else {
-            totalLabel.text = String(format: "%.2f", total)
+            totalLabel.text = formatter.string(from: total as NSNumber);
         }
         
         // Persist the details

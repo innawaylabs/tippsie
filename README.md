@@ -4,7 +4,7 @@ This is a Tip Calculator application for iOS submitted as the pre-assignment req
 
 Submitted by: Ravi Kumar Mandala
 
-Time spent: 8 hours in total
+Time spent: 9 hours in total
 
 ## User Stories
 
@@ -16,13 +16,14 @@ Time spent: 8 hours in total
 * [x] Auto-apply the default tip percentage when changed
 * [x] Remembering the bill amount across app restarts (< 5 minutes)
 * [x] Using locale-specific currency
-* [ ] Switch thousands separators based on selected currency
+* [x] Switch thousands separators based on selected currency
 * [ ] UI animations
 
 ### Additional features
 * [x] Remembering the tip percentage across app restarts.
 * [x] Added an option to round up/down the total amount. 
 * [x] Added a decimal keypad 
+* [x] Upgraded the tip selector to a UISlider to let user select any tip percentage (0 - 100)
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder.
 * [x] Theming the Settings page like the main application page (applied colors).
 * [ ] Support orientation change and make it compatible on other screens.
@@ -47,6 +48,9 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 ## Additional User Stories
 ![Video Walkthrough of additional user stories:](tippsie-demo-2.gif)
+
+## More User Stories
+![Video Walkthrough of additional user stories:](tippsie-demo-3.gif)
 
 GIF courtesy: [LiceCap](http://www.cockos.com/licecap/).
 
